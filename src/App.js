@@ -28,10 +28,16 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Estructura inicial del proyecto y Limpia
          </p>
-
+         <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
          
-        <MyComponent  />
-        <SecondComponent/>
+        
         <div>
           <hr />
           <FourthComponent />
@@ -42,13 +48,16 @@ function App() {
         <p>{message}</p>
 
          <Child name={name}  setName={setName} addMessage={addMessage}/>
+
+         <SecondComponent/>
+         
          
          <ThirdComponent
           name= "Jose"
           lastName= "Nuñez"
           card = {MedicalRecord}
          />
-        
+        <MyComponent  />
         
       </header>
     </div>
